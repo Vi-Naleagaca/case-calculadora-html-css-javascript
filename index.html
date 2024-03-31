@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Calculadora</title>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class= "calculadora">
+
+				<!-- criação da tabela que vai dar origem a calculadora, sendo o elemnto table para criar a tabela, tr para criar a linha e td para criar a celula, o colspan vai ser para definir o numero de colunas e a ordem de inserção-->
+				<table>
+							<!--campo criado apenas para apresentar o resultado das contas, não pode ser inserido texto por conta to atributo readonly-->
+							<tr>
+								<td colspan="4">
+								<input type="text" id="display" readonly>
+								</td>
+							</tr>
+							
+							<tr>
+								<!--construindo os botões de operação-->
+								<td><button class="calcbuttons" id="cleanAll" value="C">C</td>
+								<td><button class="calcbuttons" id="cleanDigit" value="CE">CE</td>		
+								<td><button class="calcbuttons" id="div" value="/">&divide;</td>
+								<td><button class="calcbuttons" id="multip" value="*">&times;</td>
+							</tr>
+
+							<tr>
+								<td><button class="calcbuttons" id="num7" value="7">7</td>
+								<td><button class="calcbuttons" id="num8" value="8">8</td>
+								<td><button class="calcbuttons" id="num9" value="9">9</td>
+								<td><button class="calcbuttons" id="sub" value="-">-</td>
+							</tr>
+
+							<tr>
+								<td><button class="calcbuttons" id="num4" value="4">4</td>
+								<td><button class="calcbuttons" id="num5" value="5">5</td>
+								<td><button class="calcbuttons" id="num6" value="6">6</td>
+								<td><button class="calcbuttons" id="soma" value="+">+</td>
+							</tr>
+
+							<tr>
+								<td><button class="calcbuttons" id="num1" value="1">1</td>
+								<td><button class="calcbuttons" id="num2" value="2">2</td>
+								<td><button class="calcbuttons" id="num3" value="3">3</td>
+								<td rowspan="2"><button class="calcbuttons" id="resultado" value="=">=</td>
+
+							</tr>
+								
+							<tr>
+								<td colspan="2"><button class="calcbuttons" id="num0" value="0">0</td>
+								<td><button class="calcbuttons" id="ponto" value=".">.</td>
+							</tr>
+					</tr>	
+
+				</table>
+		</div>	
+	</div>	
+
+</body>
+
+</html>

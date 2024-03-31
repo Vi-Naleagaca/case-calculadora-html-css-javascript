@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+* {
+    font-family: math;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #3f413d;
+    margin: 0;
+    padding: 0;
+  }
+
+.container
+{
+	/*background-image: url("Imagens/background1.jpg");*/
+  background-color: #000000;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora{
+  background-color: #363636;
+  padding: 5vh 5vh 5vh 5vh;
+  border-radius: 10% 15% 10% 15%;
+  box-shadow: 5px 5px 5px 5px #DCDCDC;
+}
+
+#display {
+  background-color: #fdfffc;
+  padding: 35px;
+  border-radius: 0.5rem;
+  text-align: end;
+  height: 5vh;
+  margin: 0.5rem;
+}
+
+.calcbuttons{
+  width: 4rem;
+  height: 3rem;
+  border: none;
+  margin: 0.3rem;
+  border-radius: 5rem;
+  background-color: #fef9ff;
+  box-shadow: 0 3px #696969;
+  text-align: center;
+}
+
+
+.calcbuttons:active {
+  transform: translateY(0.1vh);
+  box-shadow: 0 1px #00FF7F;
+}
+
+
+/* Design botoões de comando */
+#cleanAll, #cleanDigit{
+
+  background-color: #928686;
+  color: #fdfffc;
+
+}
+
+#div, #multip, #sub, #soma, #resultado{
+  background-color: #FF8C00;
+  color: #fdfffc;
+}
+
+#resultado{
+  height: 6.8rem;
+}
+
+#num0{
+  width: 8.7rem;
+}
